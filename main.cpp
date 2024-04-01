@@ -1,37 +1,47 @@
 #include <iostream>
+#include <memory>
 
 using namespace std;
 
-class Dog
+class MyClass
 {
-    public:
 
-    Dog(string _name, int _age) : name(_name)
+private:
+string name;
+
+public:
+    MyClass(string _name) : name(_name)
     {
-        if(_age > 0 && _age < 30)
-        {
-           age = _age;
-        }
-
-        
+        cout << "MyClass constructor " << name << endl;
     }
-  
-   Dog() : Dog("snow", 0){}
-   Dog(string _name) : Dog(_name, 0){}
-   Dog(int _age) : Dog("snow", _age){}
 
-    private:
-    string name;
-    int age;
+    ~MyClass()
+    {
+        cout << "MyClass destructor " << name << endl;
+    }
 
+    void someMethod()
+    {
+        cout << "Some method of MyClass " << name << endl;
+    }
+
+    
 };
+
+
+
 
 int main()
 {
-    Dog p("pushok", 10);
-    Dog d("druzgok");
-    Dog n(11);
-    Dog s;
-   
+    unique_ptr<MyClass> uniquePtr(new MyClass("Alex"));
+    uniquePtr->someMethod();
+
+    
+    shared_ptr<MyClass> sharedPtr1 = make_shared<MyClass>("Fedor");
+    sharedPtr1->someMethod();
+
+    shared_ptr<MyClass> sharedPtr2(sharedPtr1);
+  
+
     return 0;
 }
