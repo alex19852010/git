@@ -1,31 +1,15 @@
 #include <iostream>
 #include <memory>
+#include <fstream>
 
 using namespace std;
 
-class MyClass
+struct Record
 {
+    string name;
+    string surname;
+    int age;
 
-private:
-string name;
-
-public:
-    MyClass(string _name) : name(_name)
-    {
-        cout << "MyClass constructor " << name << endl;
-    }
-
-    ~MyClass()
-    {
-        cout << "MyClass destructor " << name << endl;
-    }
-
-    void someMethod()
-    {
-        cout << "Some method of MyClass " << name << endl;
-    }
-
-    
 };
 
 
@@ -33,15 +17,8 @@ public:
 
 int main()
 {
-    unique_ptr<MyClass> uniquePtr(new MyClass("Alex"));
-    uniquePtr->someMethod();
-
-    
-    shared_ptr<MyClass> sharedPtr1 = make_shared<MyClass>("Fedor");
-    sharedPtr1->someMethod();
-
-    shared_ptr<MyClass> sharedPtr2(sharedPtr1);
-  
-
+  Record record;
+  cin >> record.name >> record.surname >> record.age;
+  ofstream file("record.json");
     return 0;
 }
