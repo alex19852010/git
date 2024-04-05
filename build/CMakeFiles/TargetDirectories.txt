@@ -1,0 +1,2 @@
+C:/skillbox/git/build/CMakeFiles/edit_cache.dir
+C:/skillbox/git/build/CMakeFiles/rebuild_cache.dir
