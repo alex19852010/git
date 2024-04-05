@@ -20,6 +20,6 @@ int main()
   Record record;
   cin >> record.name >> record.surname >> record.age;
   ofstream file("record.json");
-  cout << "hello";
+  cout << "hello Alex";
     return 0;
 }
