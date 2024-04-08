@@ -33,7 +33,7 @@ int main()
   cin >> count;
   cout << "enter apples: ";
   cin >> apples;
-  int amount2 = 10;
+  int grand = 10;
 
    try
    {
