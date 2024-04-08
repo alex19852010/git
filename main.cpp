@@ -1,25 +1,47 @@
 #include <iostream>
 #include <memory>
 #include <fstream>
+#include <cassert>
+#include <exception>
 
 using namespace std;
 
-struct Record
+int divide(int divident, int divisor)
 {
-    string name;
-    string surname;
-    int age;
+  if(divisor == 0)
+  {
+     throw::exception();
+  }
+  return divident / divisor;
+}
 
-};
-
-
-
+int destribute(int apples, int count)
+{
+   if(apples < 0 || count < 0)
+   {
+     throw::exception();
+   }
+   return divide(apples, count);
+}
 
 int main()
 {
-  Record record;
-  cin >> record.name >> record.surname >> record.age;
-  ofstream file("record.json");
-  cout << "hello Alex";
-    return 0;
+  int count = 0;
+  int apples = 0;
+  cout << "enter count: ";
+  cin >> count;
+  cout << "enter apples: ";
+  cin >> apples;
+
+   try
+   {
+     cout << "apples " << destribute(apples, count) << endl;
+   }
+  
+   catch(const exception& x)
+     {
+        cerr << "cought exception: " << x.what() << endl;
+     }
+
+  return 0;
 }
