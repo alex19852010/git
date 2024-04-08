@@ -28,6 +28,7 @@ int main()
 {
   int count = 0;
   int apples = 0;
+  int amount = 5;
   cout << "enter count: ";
   cin >> count;
   cout << "enter apples: ";
