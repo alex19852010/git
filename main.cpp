@@ -33,7 +33,11 @@ int main()
   cin >> count;
   cout << "enter apples: ";
   cin >> apples;
+<<<<<<< HEAD
   int grand = 10;
+=======
+  int graund2 = 10;
+>>>>>>> 0129774a8527414e778135986b06aba03cccfb73
 
    try
    {
