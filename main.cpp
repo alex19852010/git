@@ -14,7 +14,6 @@ int main()
   cout << "real" << endl;
   cout << "hello barselona" << endl;
   cout << "hello milan";
-  cout << "hello benfica" << endl;
 
 
   return 0;
