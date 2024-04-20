@@ -13,7 +13,9 @@ int main()
 
   cout << "real" << endl;
   cout << "hello barselona" << endl;
-  cout << "hello milan";
+  cout << "hello milan" << endl;
+  cout << "hello arsenal" << endl;
+  cout << "hello portu" << endl;
 
 
   return 0;
