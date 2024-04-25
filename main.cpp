@@ -16,7 +16,7 @@ int main()
   cout << "hello arsenal" << endl;
   cout << "hello portu" << endl;
   cout << "hello bavaria" << endl;
-  cout << "hello atlrtico" << endl;
+  cout << "hello atletico" << endl;
   
    
 
