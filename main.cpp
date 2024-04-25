@@ -17,7 +17,7 @@ int main()
   cout << "hello portu" << endl;
   cout << "hello bavaria" << endl;
   cout << "hello atlrtico" << endl;
-  cout << "hello braga" << endl;
+  
    
 
   return 0;
