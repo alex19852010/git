@@ -19,7 +19,7 @@ int main()
   cout << "hello atlrtico" << endl;
   cout << "hello braga" << endl;
    cout << "hello legia" << endl;
-  cout << "hello astana" << endl;
+  
 
   return 0;
 }
